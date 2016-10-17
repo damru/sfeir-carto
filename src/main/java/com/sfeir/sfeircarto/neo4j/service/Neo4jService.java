@@ -20,7 +20,7 @@ import java.util.List;
  */
 @Service
 @Transactional
-public class Neo4jService { 
+public class Neo4jService {
 
     @Inject
     private Session session;

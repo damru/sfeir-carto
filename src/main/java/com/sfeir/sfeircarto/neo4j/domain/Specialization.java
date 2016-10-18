@@ -1,9 +1,6 @@
 package com.sfeir.sfeircarto.neo4j.domain;
 
-import lombok.AccessLevel;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.Setter;
+import lombok.*;
 import lombok.experimental.Accessors;
 import org.neo4j.ogm.annotation.EndNode;
 import org.neo4j.ogm.annotation.GraphId;
@@ -11,6 +8,7 @@ import org.neo4j.ogm.annotation.RelationshipEntity;
 import org.neo4j.ogm.annotation.StartNode;
 
 @Data
+@ToString(exclude = {"parentSkill", "childSkill" })
 @Accessors(chain = true)
 @EqualsAndHashCode(of = {"parentSkill", "childSkill" }) 
 
